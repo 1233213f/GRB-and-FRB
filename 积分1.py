@@ -1,0 +1,13 @@
+import sympy as sp
+x = sp.symbols("x")
+b = sp.symbols("b")
+E = sp.symbols("E")
+ap = sp.symbols("ah")
+bt = sp.symbols("bt")
+Ep = sp.symbols("Ep")
+z = sp.symbols("z")
+# a = sp.Integral(sp.cos(x)*sp.exp(x)**b,x)
+a = sp.Integral((sp.E/100)**ap*sp.exp(-(2+ap)*E/Ep),E)
+b = sp.init_printing(a)
+a.doit()
+print(a,a.doit())
